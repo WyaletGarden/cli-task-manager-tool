@@ -1,0 +1,25 @@
+2026-09-22 16:34:12,193 - INFO - [web.py:15] - Người dùng truy cập trang chủ (Web UI)
+2026-09-22 16:34:12,195 - INFO - [utils.py:63] - [DECORATOR] Bắt đầu gọi hàm: get_tasks
+2026-09-22 16:34:12,195 - INFO - [utils.py:43] - ==> [START] Truy vấn danh sách Task từ PostgreSQL
+2026-09-22 16:34:12,201 - INFO - [utils.py:51] - ==> [END] Truy vấn danh sách Task từ PostgreSQL hoàn thành trong 0.0057 giây
+2026-09-22 16:34:12,201 - INFO - [utils.py:68] - [DECORATOR] Hàm get_tasks chạy thành công mất 0.0066s
+2026-09-22 16:34:43,553 - INFO - [web.py:22] - Yêu cầu thêm task mới từ giao diện: Thay toàn bộ print() trong một đoạn code cho trước bằng logging
+2026-09-22 16:34:43,553 - INFO - [utils.py:63] - [DECORATOR] Bắt đầu gọi hàm: create_task
+2026-09-22 16:34:43,554 - INFO - [utils.py:43] - ==> [START] Thêm task mới: 'Thay toàn bộ print() trong một đoạn code cho trước bằng logging'
+2026-09-22 16:34:43,562 - INFO - [utils.py:51] - ==> [END] Thêm task mới: 'Thay toàn bộ print() trong một đoạn code cho trước bằng logging' hoàn thành trong 0.0075 giây
+2026-09-22 16:34:43,562 - INFO - [utils.py:68] - [DECORATOR] Hàm create_task chạy thành công mất 0.0075s
+2026-09-22 16:34:43,566 - INFO - [web.py:15] - Người dùng truy cập trang chủ (Web UI)
+2026-09-22 16:34:43,566 - INFO - [utils.py:63] - [DECORATOR] Bắt đầu gọi hàm: get_tasks
+2026-09-22 16:34:43,567 - INFO - [utils.py:43] - ==> [START] Truy vấn danh sách Task từ PostgreSQL
+2026-09-22 16:34:43,569 - INFO - [utils.py:51] - ==> [END] Truy vấn danh sách Task từ PostgreSQL hoàn thành trong 0.0020 giây
+2026-09-22 16:34:43,569 - INFO - [utils.py:68] - [DECORATOR] Hàm get_tasks chạy thành công mất 0.0020s
+2026-09-22 16:34:55,420 - INFO - [web.py:36] - Yêu cầu xóa task ID: 5
+2026-09-22 16:34:55,420 - INFO - [utils.py:63] - [DECORATOR] Bắt đầu gọi hàm: delete_task
+2026-09-22 16:34:55,420 - INFO - [utils.py:43] - ==> [START] Xóa task ID 5
+2026-09-22 16:34:55,424 - INFO - [utils.py:51] - ==> [END] Xóa task ID 5 hoàn thành trong 0.0035 giây
+2026-09-22 16:34:55,425 - INFO - [utils.py:68] - [DECORATOR] Hàm delete_task chạy thành công mất 0.0045s
+2026-09-22 16:34:55,429 - INFO - [web.py:15] - Người dùng truy cập trang chủ (Web UI)
+2026-09-22 16:34:55,429 - INFO - [utils.py:63] - [DECORATOR] Bắt đầu gọi hàm: get_tasks
+2026-09-22 16:34:55,430 - INFO - [utils.py:43] - ==> [START] Truy vấn danh sách Task từ PostgreSQL
+2026-09-22 16:34:55,431 - INFO - [utils.py:51] - ==> [END] Truy vấn danh sách Task từ PostgreSQL hoàn thành trong 0.0010 giây
+2026-09-22 16:34:55,432 - INFO - [utils.py:68] - [DECORATOR] Hàm get_tasks chạy thành công mất 0.0010s
