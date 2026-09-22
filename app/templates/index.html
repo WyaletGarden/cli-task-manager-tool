@@ -1,0 +1,32 @@
+{% extends "base.py.html" %}
+{% block title %}Quản lý Task FastAPI{% endblock %}
+{% block content %}
+    <h2 class="text-center mb-4">Ứng dụng Quản lý Task</h2>
+    
+    <form action="/add" method="post" class="input-group mb-3">
+        <input type="text" name="title" class="form-control" placeholder="Nhập tên task mới..." required>
+        <button class="btn btn-primary" type="submit">Thêm Task</button>
+    </form>
+
+    <ul class="list-group">
+        {% for task in tasks %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span {% if task.completed %}style="text-decoration: line-through; color: gray;"{% endif %}>
+                {{ task.title }}
+            </span>
+            <div>
+                <form action="/complete/{{ task.id }}" method="post" style="display:inline;">
+                    <button class="btn btn-sm {% if task.completed %}btn-secondary{% else %}btn-success{% endif %}" type="submit">
+                        {% if task.completed %}Bỏ hoàn thành{% else %}Hoàn thành{% endif %}
+                    </button>
+                </form>
+                <form action="/delete/{{ task.id }}" method="post" style="display:inline;">
+                    <button class="btn btn-sm btn-danger" type="submit">Xóa</button>
+                </form>
+            </div>
+        </li>
+        {% else %}
+        <li class="list-group-item text-center text-muted">Chưa có task nào được tạo.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
